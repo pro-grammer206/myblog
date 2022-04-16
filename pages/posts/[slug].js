@@ -44,6 +44,7 @@ export default function post({ article }) {
           src={article.image.url}
           width={article.image.width}
           height={article.image.height}
+          alt={article.title}
         />
       ) : null}
       <RichText content={article.content.json} />

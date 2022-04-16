@@ -9,9 +9,9 @@ const about = () => {
         <a
           href="https://github.com/pro-grammer206"
           target="_blank"
-          rel="no-referrer"
+          rel="noreferrer"
         >
-          <Image src="/github.svg" width={40} height={40} />
+          <Image src="/github.svg" width={40} height={40} alt="giticon" />
         </a>
       </section>
       <section className="pcards">

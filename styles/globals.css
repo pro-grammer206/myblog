@@ -22,9 +22,11 @@ nav {
   font-weight: 900;
   gap: 1rem;
   justify-content: center;
+  align-items: baseline;
   background-color: blueviolet;
   color: white;
 }
+
 main {
   margin: 2rem;
 }
