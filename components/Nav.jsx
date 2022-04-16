@@ -11,6 +11,7 @@ const Nav = () => {
         <a>About</a>
       </Link>
     </nav>
+    
   );
 };
 

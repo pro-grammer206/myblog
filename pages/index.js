@@ -31,7 +31,7 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>Home </title>
+        <title>Home</title>
       </Head>
       <div className="wall">
         {articles.map((a) => (

@@ -2,6 +2,7 @@ import { GraphQLClient } from "graphql-request";
 import { RichText } from "@graphcms/rich-text-react-renderer";
 import moment from "moment";
 import Image from "next/image";
+import Head from "next/head";
 
 export async function getServerSideProps({ query }) {
   const graphcms = new GraphQLClient(process.env.ENDPOINT);
@@ -37,6 +38,9 @@ export async function getServerSideProps({ query }) {
 export default function post({ article }) {
   return (
     <div className="post">
+      <Head>
+        <title>{article.title}</title>
+      </Head>
       <h3>{article.title}</h3>
       <p>{moment(article.createdAt).fromNow()}</p>
       {article.image ? (

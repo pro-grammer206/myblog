@@ -1,9 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import Head from "next/head";
 
 const about = () => {
   return (
     <div className="grids">
+      <Head>
+        <title>About</title>
+      </Head>
       <section className="pcards" id="webdev">
         <p>Web developer</p>
         <a
